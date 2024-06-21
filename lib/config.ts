@@ -14,7 +14,7 @@ if (!process.env.ENVIROMENT || process.env.S3_IMAGE_BUCKET_NAME) {
 
 export const getConfig = (): Env => {
     return {
-        ENVIROMENT: process.env.ENVIROMENT
-        S3_IMAGE_BUCKET_NAME: process.env.S3_IMAGE_BUCKET_NAME
+        ENVIROMENT: process.env.ENVIROMENT || '',
+        S3_IMAGE_BUCKET_NAME: process.env.S3_IMAGE_BUCKET_NAME || ''
     }
 }
