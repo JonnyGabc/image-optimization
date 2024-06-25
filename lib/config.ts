@@ -8,7 +8,6 @@ export type Env = {
     readonly ENVIRONMENT: string,
     readonly S3_IMAGE_BUCKET_NAME: string
 }
-console.log(process.env);
 const validString = (value:any): string => {
     if(!value || value.length === 0) {
         throw new Error('Env Not Configured Correctly');
