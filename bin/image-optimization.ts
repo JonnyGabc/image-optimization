@@ -9,4 +9,4 @@ const config = getConfig();
 
 const app = new cdk.App();
 
-new ImageOptimizationStack(app, `${config.ENVIROMENT}-${config.PROJECT_NAME}`, config);
+new ImageOptimizationStack(app, `${config.ENVIRONMENT}-${config.PROJECT_NAME}`, config);
