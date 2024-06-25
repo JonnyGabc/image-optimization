@@ -8,4 +8,5 @@ import { getConfig } from '../lib/config';
 const config = getConfig();
 
 const app = new cdk.App();
-new ImageOptimizationStack(app, `${config.ENVIROMENT}-ImgTransformationStack`, config);
+
+new ImageOptimizationStack(app, `${config.ENVIROMENT}-${config.PROJECT_NAME}`, config);
