@@ -10,7 +10,7 @@ export type Env = {
 }
 const validString = (value:any): string => {
     if(!value || value.length === 0) {
-        throw new Error('Env Not Configured Correctly');
+        throw new Error('.env Not Configured Correctly. Look at sample.env');
     }
     return value;
 }
